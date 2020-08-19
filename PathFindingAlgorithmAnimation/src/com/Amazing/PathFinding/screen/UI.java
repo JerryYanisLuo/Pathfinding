@@ -61,7 +61,7 @@ public class UI {
 	public static JLabel time = new JLabel("-----",JLabel.CENTER);
 	
 	private ArrayList<JButton> btns = new ArrayList<>();
-	private ArrayList<JComboBox> comboxes = new ArrayList<>();
+	private ArrayList<JComboBox<String>> comboxes = new ArrayList<>();
 	
 	private int backGroundColor = 0x003b8f;
 	
@@ -125,7 +125,10 @@ public class UI {
 	    	combox.setUI(new BasicComboBoxUI() {
 			    protected JButton createArrowButton() {
 			        return new JButton() {
-			            public int getWidth() {
+
+						private static final long serialVersionUID = 1L;
+
+						public int getWidth() {
 			                return 0;
 			            }
 			        };
@@ -199,9 +202,11 @@ public class UI {
 		panel.add(btDraw,gridConstraints);
 		
 		gridConstraints.gridx = 1;
+		gridConstraints.gridy = 0;
 		panel.add(btClear,gridConstraints);
 		
 		gridConstraints.gridx = 2;
+		gridConstraints.gridy = 0;
 		panel.add(btErase,gridConstraints);
 		
 		
@@ -210,9 +215,11 @@ public class UI {
 		panel.add(btStart,gridConstraints);
 		
 		gridConstraints.gridx = 1;
+		gridConstraints.gridy = 1;
 		panel.add(btEnd,gridConstraints);
 		
 		gridConstraints.gridx = 2;
+		gridConstraints.gridy = 1;
 		panel.add(btBomb,gridConstraints);
 		
 		gridConstraints.gridx = 3;
@@ -252,9 +259,7 @@ public class UI {
 		timecomsume.setForeground(Color.WHITE);
 		path.setForeground(Color.WHITE);
 		time.setForeground(Color.WHITE);
-		
-		pathlength.setAlignmentX(10);
-		
+
 		addButtonListener();
 	}
 	
