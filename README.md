@@ -8,6 +8,7 @@ The path finding agorithm includes:
 - Dijkstra’s algorithm
 - Greedy best first search.
 
+
 The project also provides the function for generating maze. 
 
 The maze generation algorithms includes:
@@ -18,6 +19,7 @@ The maze generation algorithms includes:
 - Kruskal's algorithm
 - Binary tree algorithm
 - Sidewinder algorithm.
+
 
 When using this software, you can easily specify the start point, end point and the wall. By choosing one of the algorithms and clicking the "visualize algorithm" button, the software will show you the complete amazing procedure how it find the best path.
 
