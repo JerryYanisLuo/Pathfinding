@@ -1,5 +1,5 @@
 # Pathfinding
-This project aims to animate various path finding algorithms
+This project aims to animate various path finding algorithms and maze generation algorithms
 
 The path finding agorithm includes:
 - A* search
@@ -7,9 +7,6 @@ The path finding agorithm includes:
 - Breadth-first search
 - Dijkstra’s algorithm
 - Greedy best first search.
-
-
-The project also provides the function for generating maze. 
 
 The maze generation algorithms includes:
 - Depth-first search
